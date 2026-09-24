@@ -1,0 +1,2 @@
+# Mini SOC V1
+# Uses Python standard library only
