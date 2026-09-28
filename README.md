@@ -1,47 +1,45 @@
 #  Mini SOC
 
-A lightweight Python-based Security Operations Center (SOC) project designed to collect, analyze, and monitor security events from Linux systems.
+A lightweight Python-based Security Operations Center (SOC) project built on Linux.
 
-The project is being developed incrementally through three versions, with each version adding new SOC capabilities.
+The project is developed in three versions, with each version adding new security monitoring and detection capabilities.
+
+---
 
 ##  Current Version
 
-### V1 — Log Monitoring & Detection ✅
+### V2 — Detection & Alerting ✅
 
-V1 focuses on the foundation of the Mini SOC:
+V2 introduces a basic security detection engine capable of analyzing Linux authentication activity and generating security alerts.
 
-- Linux log monitoring
-- Security event detection
-- Suspicious activity identification
-- Alert generation
-- Basic event analysis
+### V2 Features
 
-##  Workflow
+- Linux log collection
+- Authentication event parsing
+- Failed login detection
+- Successful login detection
+- Sudo activity detection
+- User creation detection
+- Brute-force detection
+- Configurable detection rules
+- Severity levels
+- Alert logging
 
-Log Source
-↓
-Log Collection
-↓
-Event Parsing
-↓
-Detection Rules
-↓
-Security Alert
+---
 
-##  Technologies
+##  Architecture
 
-- Python
-- Linux
-- Linux Logs
-- Regex
-- Git & GitHub
-
-##  Roadmap
-
-- V1 — Log Monitoring & Detection ✅
-- V2 — Detection Rules & Alerting 🔜
-- V3 — Dashboard & SOC Monitoring 🔜
-
-##  Responsible Use
-
-This project is intended for educational purposes, authorized security monitoring, and personal lab environments.
+```text
+Linux Logs
+    ↓
+Collector
+    ↓
+Parser
+    ↓
+Detection Engine
+    ↓
+Security Rules
+    ↓
+Alerts
+    ↓
+Alert Log

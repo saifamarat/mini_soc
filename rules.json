@@ -1,0 +1,23 @@
+{
+    "failed_login": {
+        "enabled": true,
+        "severity": "MEDIUM"
+    },
+    "successful_login": {
+        "enabled": true,
+        "severity": "LOW"
+    },
+    "sudo_usage": {
+        "enabled": true,
+        "severity": "MEDIUM"
+    },
+    "user_creation": {
+        "enabled": true,
+        "severity": "HIGH"
+    },
+    "brute_force": {
+        "enabled": true,
+        "severity": "HIGH",
+        "threshold": 5
+    }
+}
